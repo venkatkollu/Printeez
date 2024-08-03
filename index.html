@@ -100,12 +100,14 @@
             background-color: #f5f5f5;
             border-radius: 8px;
             overflow: hidden;
+            position: relative;
         }
 
         .product img {
             width: 100%;
             height: auto;
             display: block;
+            cursor: pointer;
         }
 
         .product-description {
@@ -178,17 +180,17 @@
                 <li><a href="http://wa.me/+919010762502">CONTACT</a></li>
             </nav>
         </div>
-       
+        <div class="header-right">
+            <a href="#"><i class="fa fa-search"></i></a>
+        </div>
     </header>
 
     <div class="main-content">
-        <h1>Featured Products</h1><br><br>
+        <h1>Featured Products</h1>
         <div class="featured-products">
             <!-- Product 1 -->
-            <div class="product">
-                <a href="http://wa.me/+919010762502">
-                    <img src="https://www.xtees.com/uploads/products/images/primary/straight-outta-custom-text-printed-t-shirt_1706019668.jpg" alt="Product 1">
-                </a>
+            <div class="product" onclick="redirectToWhatsApp('http://wa.me/+919010762502', 'https://www.xtees.com/uploads/products/images/primary/straight-outta-custom-text-printed-t-shirt_1706019668.jpg')">
+                <img src="https://www.xtees.com/uploads/products/images/primary/straight-outta-custom-text-printed-t-shirt_1706019668.jpg" alt="Product 1">
                 <div class="product-description">
                     <h2>Custom Text T-Shirt</h2>
                     <p>Design your own text on this stylish t-shirt.</p>
@@ -196,10 +198,8 @@
                 </div>
             </div>
             <!-- Product 2 -->
-            <div class="product">
-                <a href="http://wa.me/+919010762502">
-                    <img src="https://i.ebayimg.com/images/g/nXkAAOSwQXdkVhjp/s-l1600.jpg" alt="Product 2">
-                </a>
+            <div class="product" onclick="redirectToWhatsApp('http://wa.me/+919010762502', 'https://i.ebayimg.com/images/g/nXkAAOSwQXdkVhjp/s-l1600.jpg')">
+                <img src="https://i.ebayimg.com/images/g/nXkAAOSwQXdkVhjp/s-l1600.jpg" alt="Product 2">
                 <div class="product-description">
                     <h2>Graphic Tee</h2>
                     <p>Stand out with this unique graphic tee.</p>
@@ -207,10 +207,8 @@
                 </div>
             </div>
             <!-- Product 3 -->
-            <div class="product">
-                <a href="http://wa.me/+919010762502">
-                    <img src="https://ih1.redbubble.net/image.1753704059.0732/ssrco,slim_fit_t_shirt,flatlay,101010:01c5ca27c6,front,wide_portrait,750x1000-bg,f8f8f8.jpg" alt="Product 3">
-                </a>
+            <div class="product" onclick="redirectToWhatsApp('http://wa.me/+919010762502', 'https://ih1.redbubble.net/image.1753704059.0732/ssrco,slim_fit_t_shirt,flatlay,101010:01c5ca27c6,front,wide_portrait,750x1000-bg,f8f8f8.jpg')">
+                <img src="https://ih1.redbubble.net/image.1753704059.0732/ssrco,slim_fit_t_shirt,flatlay,101010:01c5ca27c6,front,wide_portrait,750x1000-bg,f8f8f8.jpg" alt="Product 3">
                 <div class="product-description">
                     <h2>Minimalist Shirt</h2>
                     <p>Perfect for a clean and minimalist look.</p>
@@ -218,10 +216,8 @@
                 </div>
             </div>
             <!-- Product 4 -->
-            <div class="product">
-                <a href="http://wa.me/+919010762502">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHofjQkvSve0GBWIu_K28joszO8aLbQmcaDe7p2IP6vDYsSgLAehQp63gYeyYj1v7LQoE&usqp=CAU" alt="Product 4">
-                </a>
+            <div class="product" onclick="redirectToWhatsApp('http://wa.me/+919010762502', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHofjQkvSve0GBWIu_K28joszO8aLbQmcaDe7p2IP6vDYsSgLAehQp63gYeyYj1v7LQoE&usqp=CAU')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHofjQkvSve0GBWIu_K28joszO8aLbQmcaDe7p2IP6vDYsSgLAehQp63gYeyYj1v7LQoE&usqp=CAU" alt="Product 4">
                 <div class="product-description">
                     <h2>Vintage Tee</h2>
                     <p>Bring a touch of vintage style to your wardrobe.</p>
@@ -229,10 +225,8 @@
                 </div>
             </div>
             <!-- Product 5 -->
-            <div class="product">
-                <a href="http://wa.me/+919010762502">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQSXIVSHvzEpwKYGEDf42GVFJf46H0BXS4dj9AIXHm3AK0n3-sitPRXR5m_whlDiFlEU&usqp=CAU" alt="Product 5">
-                </a>
+            <div class="product" onclick="redirectToWhatsApp('http://wa.me/+919010762502', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQSXIVSHvzEpwKYGEDf42GVFJf46H0BXS4dj9AIXHm3AK0n3-sitPRXR5m_whlDiFlEU&usqp=CAU')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQSXIVSHvzEpwKYGEDf42GVFJf46H0BXS4dj9AIXHm3AK0n3-sitPRXR5m_whlDiFlEU&usqp=CAU" alt="Product 5">
                 <div class="product-description">
                     <h2>Classic Fit T-Shirt</h2>
                     <p>Comfort and style in a classic fit.</p>
@@ -240,10 +234,8 @@
                 </div>
             </div>
             <!-- Product 6 -->
-            <div class="product">
-                <a href="http://wa.me/+919010762502">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyaY_8KcNtgmUsxA7MTgPCCwkc25cF6P0FOQ&s" alt="Product 6">
-                </a>
+            <div class="product" onclick="redirectToWhatsApp('http://wa.me/+919010762502', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyaY_8KcNtgmUsxA7MTgPCCwkc25cF6P0FOQ&s')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyaY_8KcNtgmUsxA7MTgPCCwkc25cF6P0FOQ&s" alt="Product 6">
                 <div class="product-description">
                     <h2>Sporty Tee</h2>
                     <p>Ideal for sports and casual wear.</p>
@@ -253,6 +245,14 @@
         </div>
     </div>
 
+    <script>
+        function redirectToWhatsApp(whatsappLink, imageUrl) {
+            // Open WhatsApp link in a new window or tab
+            window.open(whatsappLink, '_blank');
+            // Open image in a new window or tab
+            window.open(imageUrl, '_blank');
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
