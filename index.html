@@ -130,8 +130,22 @@
 
         @media (max-width: 768px) {
             .featured-products {
-                grid-template-columns: 1fr;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
                 gap: 15px;
+            }
+
+            .product {
+                height: calc(50vw * 9 / 16); /* Maintain 9:16 aspect ratio */
+            }
+
+            .product img {
+                height: calc(50vw * 9 / 16); /* Make sure images fit within product */
+                object-fit: cover; /* Cover the area, cropping if necessary */
+            }
+
+            .product-description {
+                display: none; /* Hide descriptions on mobile view */
             }
 
             .header {
