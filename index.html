@@ -89,17 +89,14 @@
         }
 
         .featured-products {
-            column-count: 4; /* 4 columns by default */
-            column-gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+            grid-gap: 15px;
             margin: 0 auto;
             max-width: 1200px;
         }
 
         .product {
-            break-inside: avoid;
-            margin-bottom: 15px;
-            display: inline-block;
-            width: 100%;
             background-color: #f5f5f5;
             border-radius: 8px;
             overflow: hidden;
@@ -157,13 +154,14 @@
             }
 
             .featured-products {
-                column-count: 2; /* 2 columns on medium screens */
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
             }
         }
 
         @media (max-width: 576px) {
             .featured-products {
-                column-count: 1; /* 1 column on small screens */
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+                grid-gap: 10px; /* Adjust gap for smaller screens */
             }
         }
     </style>
